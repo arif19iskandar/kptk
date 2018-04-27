@@ -1,0 +1,3 @@
+.navbar {background: #0575E6;background: -webkit-linear-gradient(to right, #021B79, #0575E6);background: linear-gradient(to right, #021B79, #0575E6);height: 70px;}
+.navbar-brand { font-weight: 500 ;font-size: 16pt}
+.navbar-collapse {margin: auto; flex-grow: 0}
