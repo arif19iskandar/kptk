@@ -2,7 +2,7 @@
 .navbar.fixed {background: #0575E6;background: -webkit-linear-gradient(to right, #021B79, #0575E6);background: linear-gradient(to right, #021B79, #0575E6);}
 
 .navbar-brand { font-weight: 500 ;font-size: 16pt}
-.navbar-collapse {margin: auto; flex-grow: 0}
+.navbar-collapse .navbar-nav{margin: auto; flex-grow: 0}
 .navbar-nav .nav-link {color: rgba(255,255,255,.6) !important; }
 /*<<<<<<< HEAD */
 .navbar-nav .nav-item.active {border-bottom: 3px solid #fff!important;font-weight: 500;color: rgba(255,255,255,1) !important;}
