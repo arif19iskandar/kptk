@@ -521,6 +521,9 @@
   .navbar-nav .nav-link .material-icons {
     display: grid;
   }
+  #mobile-nav, .body-overlay {
+    display: none !important;
+  }
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
