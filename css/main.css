@@ -1,3 +1,28 @@
+/*font*/
+
+@font-face{
+  font-family:'aileron';
+    src: url('../fonts/aileron/Aileron-Regular.otf') format('opentype');
+}
+@font-face{
+  font-family:'open sans';
+    src: url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+}
+@font-face{
+  font-family:'open sans light';
+    src: url('../fonts/Open_Sans/OpenSans-Light.ttf') format('truetype');
+}
+
+.font-aileron, .carousel-caption h1, .title{
+  font-family:aileron;
+}
+.font-opensans, .carousel-caption p, .text{
+  font-family:open sans;
+}
+.font-opensans-light, .font-small{
+  font-family:open sans light;
+}
+
 /*navbar*/
 .navbar {
   height: unset;
@@ -12,7 +37,8 @@
 }
 .navbar-brand { 
   font-weight: 500 ;
-  font-size: 16pt
+  font-size: 16pt;
+  font-family: aileron;
 }
 .navbar-collapse .navbar-nav {
   margin: auto; 
@@ -286,6 +312,7 @@
   color: #fff;
   opacity: .8;
   border-left: 8px solid transparent;
+  margin-top:15px;
 }
 #mobile-nav .nav .nav-link.active {
   opacity: 1;
@@ -464,7 +491,10 @@
   background: linear-gradient(to right, #021B79, #0575E6);
   color: #ffffff;
 }
+
+
 /*media for responsive*/
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
       .carousel-caption {
@@ -479,6 +509,11 @@
     }
     #mobile-nav .brand {
       display: none;
+    }
+    .text-caption {
+      width: 200px;
+      height: 169px;
+      overflow-y: hidden;
     }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
