@@ -4,9 +4,12 @@ $(document).ready(function() {
     if ($(window).scrollTop() > 100) {
       $('.navbar').addClass('fixed');
       $('.cd-nav-trigger').addClass('start');
+      $('#mobile-nav .form-inline').css('top','17px');
+
     } else {
       $('.navbar').removeClass('fixed');
       $('.cd-nav-trigger').removeClass('start');
+      $('#mobile-nav .form-inline').css('top','22px');
     }
   }, 100);  
 
@@ -22,7 +25,7 @@ $(document).ready(function() {
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
-        scrollTop: $(hash).offset().top
+        scrollTop: $(hash).offset().top - 70
       }, 800, function(){
    
         // Add hash (#) to URL when done scrolling (default click behavior)
@@ -37,10 +40,12 @@ $(document).ready(function() {
 		$(this).addClass('close-nav');
 		$('#mobile-nav').addClass('show');
 		$('.body-overlay').addClass('show-nav');
+    $('body').css('overflow','hidden');
 	} else {
 		$(this).removeClass('close-nav');
 		$('#mobile-nav').removeClass('show');
 		$('.body-overlay').removeClass('show-nav');
+    $('body').css('overflow','unset');
 	}
 	return false;
 });
