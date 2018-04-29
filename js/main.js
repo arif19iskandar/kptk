@@ -1,12 +1,19 @@
-setInterval(function () {
+$(document).ready(function() {
+  // navigation scroll
+  setInterval(function () {
     if ($(window).scrollTop() > 100) {
       $('.navbar').addClass('fixed');
     } else {
       $('.navbar').removeClass('fixed');
     }
-}, 100);
+  }, 100);  
+});
 
-$('.btn-scroll').click(function(){
-  $('html, body').animate({scrollTop : 0},800);
-  return false;
+$('.cd-nav-trigger').click(function(){
+	if(!$(this).hasClass('close-nav')){
+		$(this).addClass('close-nav');
+	} else {
+		$(this).removeClass('close-nav');
+	}
+	return false;
 });
