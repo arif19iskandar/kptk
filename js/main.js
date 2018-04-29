@@ -3,8 +3,10 @@ $(document).ready(function() {
   setInterval(function () {
     if ($(window).scrollTop() > 100) {
       $('.navbar').addClass('fixed');
+      $('.cd-nav-trigger').addClass('start');
     } else {
       $('.navbar').removeClass('fixed');
+      $('.cd-nav-trigger').removeClass('start');
     }
   }, 100);  
 
@@ -24,17 +26,21 @@ $(document).ready(function() {
       }, 800, function(){
    
         // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
+        // window.location.hash = hash;
       });
     }  // End if
   });
 });
-
-$('.cd-nav-trigger').click(function(){
+// menu icon
+  $('.cd-nav-trigger').click(function(){
 	if(!$(this).hasClass('close-nav')){
 		$(this).addClass('close-nav');
+		$('#mobile-nav').addClass('show');
+		$('.body-overlay').addClass('show-nav');
 	} else {
 		$(this).removeClass('close-nav');
+		$('#mobile-nav').removeClass('show');
+		$('.body-overlay').removeClass('show-nav');
 	}
 	return false;
 });

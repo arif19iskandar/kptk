@@ -22,10 +22,6 @@
 		    <img src="images/logo_kptk.png" height="40" class="d-inline-block" alt="LPPPTK KPTK">
 		    LPPPTK KPTK
 		</a>
-<!-- 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-
-		  </button> -->
 		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 		    <div class="navbar-nav">
 		      <a class="nav-item nav-link active" href="index.html"><i class="material-icons">home</i> Beranda <span class="sr-only">(current)</span></a>
@@ -45,6 +41,29 @@
 	  </div>
 	</nav>
 
+  <!-- mobile nav -->
+  <div  id="mobile-nav">
+    <div class="brand">
+      <a class="brand-link" href="index.html">
+        <img src="images/logo_kptk.png" height="100" class="d-inline-block" alt="LPPPTK KPTK">
+        LPPPTK KPTK
+    </a>
+    </div>
+      <nav class="nav flex-column">
+        <a class="nav-link active" href="#"><i class="material-icons">home</i> Beranda </a>
+        <a class="nav-link" href="#"><i class="material-icons">account_balance</i> Profil Lembaga</a>
+        <a class="nav-link" href="#"><i class="material-icons">device_hub</i> Struktur Organisasi</a>
+        <a class="nav-link" href="#"><i class="material-icons">event_note</i> Artikel</a>
+      </nav>
+      <form class="form-inline">
+        <div class="input-group search">
+          <input type="text" class="form-control radius-18" placeholder="Cari" aria-label="Cari" aria-describedby="basic-addon1">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1"><i class="material-icons">search</i> </span>
+          </div>
+        </div>
+      </form>
+  </div>
 	<!-- carousel -->
 
 	 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
@@ -97,9 +116,6 @@
       </div>
     </div>
     
-    <a href="#0" class="cd-nav-trigger">Menu
-    	<span class="cd-icon"></span>
-    </a>
     <div class="col" style="width:100%;height:auto;padding-bottom:50px;background:;">
     	<div class="container padding-top-30px" id="satu">
     		<h1 class="align-center">Berita Terkini</h1>
@@ -155,6 +171,12 @@
     		<h1>Berita Terkini</h1>
     	</div>
     </div>
+
+<!-- menu icon -->
+    <a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+    <div class="body-overlay"></div>
+<!-- end menu icon -->
+
     <script src="js/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
