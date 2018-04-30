@@ -23,10 +23,16 @@
   font-family:open sans light;
 }
 
+body{
+  font-family: open sans;
+}
 .title {
 
 }
 
+.blue-light{
+  color:#0575E6;
+}
 #satu a {
   text-decoration: none;
 }
@@ -503,6 +509,18 @@
   border:0.14em solid #0575E6;
   width:130px;
 }
+
+.search-button{
+  cursor: pointer; 
+  background: #0575E6;
+  color: #ffffff;
+  padding:5px;
+  border-radius: 25px;
+  font-size: 0.9em;
+  border:0.14em solid #0575E6;
+  width:80px;
+
+}
 .more-info:hover{
   transition: 0.9s ease;
   
@@ -566,6 +584,48 @@ background: linear-gradient(to right, #26D0CE, #1A2980); /* W3C, IE 10+/ Edge, F
   background: #007bff !important;
   color:#ffffff !important;
   transition: 0.6s ease !important;
+}
+
+.no-underline a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.font-size-md{
+  font-size: 1em;
+}
+
+.footer-up{
+  width:100%;background:#050c41;color:#ffffff
+}
+.footer-deep{
+  width:100%;background:#050a31;height:;padding-bottom: 10px;color:#ffffff;
+}
+
+.scrollToTop{
+  width:40px; 
+  height:45px;
+  padding-top:10px; 
+  padding-bottom:10px; 
+  text-align:center; 
+  background:#050c41;
+  font-weight: bold;
+  color:white;
+  text-decoration: none;
+  position:fixed;
+  z-index:999;
+  bottom:0px;
+  right:0px;
+  display:none;
+  animation: fadein 2s;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+}
+.scrollToTop:hover{
+  opacity:0.6;
+  color:white;
 }
 /* end carousel*/
 /* Extra small devices (phones, 600px and down) */
@@ -658,6 +718,14 @@ background: linear-gradient(to right, #26D0CE, #1A2980); /* W3C, IE 10+/ Edge, F
     padding-bottom: 10px;
   }
 
+   .own-navigation .owl-nav .owl-prev{
+     
+      left:0px;
+     }
+    
+    .own-navigation .owl-nav .owl-next{
+      right:0px;
+    }
 }
 @media only screen and (min-width: 768px) {
   .navbar {
