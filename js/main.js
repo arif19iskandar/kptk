@@ -33,6 +33,14 @@ $(document).ready(function() {
       });
     }  // End if
   });
+
+   var $el = $('.parallax');
+   $el.html('<div class="overlay"></div>' + $el.html());
+   $el.css('background-image','url(' + $el.data('image') + ' )');
+    $(window).on('scroll', function () {
+        var scroll = $(document).scrollTop();
+        $el.css('background-position','50% '+(-.17*(scroll-$el.offset().top ))+'px');
+    });
 });
 // menu icon
   $('.cd-nav-trigger').click(function(){
