@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="css/font-awesome.min.css" />
   
     <link rel="shortcut icon" href="logo.ico"/>
-    <title>Indeks - LPPPTK KPTK</title>
+    <title>Pengaduan Masyarakat - LPPPTK KPTK</title>
 
   </head>
   <body class="no-parallax">
@@ -47,25 +47,104 @@
 		  </div>
 	  </div>
 	</nav>
-
-  <!-- jumbotron -->
-  <div class="jumbotron jumbotron-fluid bg-true relative bottom-0 keterangan-artikel">
-    <div class="container">
-      <h1 class="display-4 title">ARTIKEL</h1>
-      <p class="lead font-opensans-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius fringilla tortor nec gravida. In posuere id odio in varius. Nunc turpis mauris, dapibus quis euismod non, pulvinar at massa. Donec suscipit ornare elit ut bibendum. Quisque at nibh eu est hendrerit suscipit. Sed sit amet est lorem. </p>
+  <!-- mobile nav -->
+  <div  id="mobile-nav">
+    <div class="brand">
+      <a class="brand-link" href="index.html">
+        <img src="images/logo_kptk.png" height="100" class="d-inline-block" alt="LPPPTK KPTK">
+        LPPPTK KPTK
+    </a>
     </div>
-    <div class="scroll" id="click">
-        <a href="#satu">
-          <button class="rounded-circle circle-click">
-            <i class="material-icons">keyboard_arrow_down</i>
-          </button>
-        </a>
-      </div>
+      <nav class="nav flex-column">
+        <a class="nav-link" href="#"><i class="material-icons">home</i> Beranda </a>
+        <a class="nav-link" href="#"><i class="material-icons">account_balance</i> Profil Lembaga</a>
+        <a class="nav-link" href="#"><i class="material-icons">device_hub</i> Struktur Organisasi</a>
+        <a class="nav-link active" href="#"><i class="material-icons">event_note</i> Artikel</a>
+      </nav>
+      <form class="form-inline">
+        <div class="input-group search">
+          <input type="text" class="form-control radius-18" placeholder="Cari" aria-label="Cari" aria-describedby="basic-addon1">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1"><i class="material-icons">mail</i> </span>
+          </div>
+        </div>
+      </form>
+  </div>
+  <!-- jumbotron -->
+  <div class="jumbotron jumbotron-fluid bg-true relative bottom-0">
+    <div class="container">
+      <h1 class="display-4 title">Pengaduan Masyarakat</h1>
+      <p class="font-opensans-light">Identitas Anda sebagai pelapor dijamin kerahasiaannya! </p>
+    </div>
   </div>
 
   <!-- content -->
-  <div class="col" id="satu" style="background: pink ; height: 100vh">
-    
+  <div class="col padding-top-30px padding-bottom-50px">
+      <form>
+        <div class="row mb-2">
+            <div class="col-md-6">
+              <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                <div class="card-body d-flex flex-column align-items-start">
+                  <h3 class="mb-0">
+                    <a class="text-dark">Identitas Pelapor</a>
+                  </h3>
+                  <small id="emailHelp" class="form-text text-muted">Tidak wajib diisi</small>
+                  <div class="form-group">
+                    <label for="inputID">No. Identitas (KTP/SIM/dll)</label>
+                    <input type="text" class="form-control" id="inputID" placeholder="0030287126">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputNama">Nama</label>
+                    <input type="text" class="form-control" id="inputNama" placeholder="M. Fadly T">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="fadly@kptk.or.id">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputHP">Nomor Telepon/Ponsel</label>
+                    <input type="text" class="form-control" id="inputHP" placeholder="0821 xxxx xxxx">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                <div class="card-body d-flex flex-column align-items-start">
+                  <h3 class="mb-0">
+                    <a class="text-dark">Materi Aduan</a>
+                  </h3>
+                  <small id="emailHelp" class="form-text text-muted">Wajib diisi</small>
+                  <div class="form-group">
+                    <label for="inputJenis">Jenis Aduan</label>
+                    <select class="form-control" id="inputJenis">
+                      <option value="0" selected="selected">Tindak Korupsi, Kolusi, dan/atau Nepotisme (KKN)</option>
+                      <option value="1">Gratifikasi</option>
+                      <option value="2">Perbuatan Asusila dan/atau Amoral</option>
+                      <option value="3">Tindakan Kriminal</option>
+                      <option value="4">Etika Publik</option>
+                      <option value="99">Lainnya</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputKet">Keterangan</label>
+                    <textarea class="form-control" id="inputKet" rows="5"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="Lampiran">Bukti Lampiran</label>
+                    <input type="file" class="form-control-file" id="Lampiran">
+                    <small id="lampiranHelp" class="form-text text-muted">* Tidak wajib</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputHP">Kode Keamanan</label>
+                    <input type="text" class="form-control" id="inputHP" placeholder="0821 xxxx xxxx">
+                  </div>
+                  <button class="more-info">Kirim</button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </form>
   </div>
 
   <div class="col slider-bottom">
@@ -137,29 +216,7 @@
   <a href="#" class="scrollToTop"><i class="material-icons">keyboard_arrow_up</i></a>
 
 
-  <!-- mobile nav -->
-  <div  id="mobile-nav">
-    <div class="brand">
-      <a class="brand-link" href="index.html">
-        <img src="images/logo_kptk.png" height="100" class="d-inline-block" alt="LPPPTK KPTK">
-        LPPPTK KPTK
-    </a>
-    </div>
-      <nav class="nav flex-column">
-        <a class="nav-link" href="#"><i class="material-icons">home</i> Beranda </a>
-        <a class="nav-link" href="#"><i class="material-icons">account_balance</i> Profil Lembaga</a>
-        <a class="nav-link" href="#"><i class="material-icons">device_hub</i> Struktur Organisasi</a>
-        <a class="nav-link active" href="#"><i class="material-icons">event_note</i> Artikel</a>
-      </nav>
-      <form class="form-inline">
-        <div class="input-group search">
-          <input type="text" class="form-control radius-18" placeholder="Cari" aria-label="Cari" aria-describedby="basic-addon1">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon1"><i class="material-icons">mail</i> </span>
-          </div>
-        </div>
-      </form>
-  </div>
+  
 	<!-- carousel -->
 
 <!-- menu icon -->

@@ -1,3 +1,7 @@
+.form-group {
+  width: 100%;
+}
+
 /* artikel */
 .share .fa {
   padding: 15px;
@@ -108,6 +112,8 @@
 
 body{
   font-family: open sans;
+  line-height: 2;
+  letter-spacing: .5px;
 }
 .title {
 
