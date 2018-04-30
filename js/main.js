@@ -59,8 +59,8 @@ $(document).ready(function() {
 	}
 	return false;
 });
-
-(function($){
+if ($('.owl-carousel').length > 0) {
+  (function($){
       $('.owl-carousel').owlCarousel({
         loop:true,
         margin:10,
@@ -90,6 +90,8 @@ $(document).ready(function() {
         }
       });
     })(jQuery);
+}
+
 
 $(document).ready(function(){
       
