@@ -57,3 +57,34 @@ $(document).ready(function() {
 	}
 	return false;
 });
+
+(function($){
+      $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        lazyLoad:true,
+        afterLazyLoad: function(elem){
+        $(elem).addClass("border-red");
+        },
+        dots:false,
+        nav:true,
+        autoplay:true,
+        navText: [
+        "<i class='material-icons'>keyboard_arrow_left</i>",
+        "<i class='material-icons'>keyboard_arrow_right</i>"
+        ],
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        responsive:{
+          0:{
+            items:1
+          },
+          600:{
+            items:3
+          },
+          1000:{
+            items:4
+          }
+        }
+      });
+    })(jQuery);
