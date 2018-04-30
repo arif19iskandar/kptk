@@ -1,3 +1,38 @@
+/* artikel */
+.bg-true {
+  color: #ffffff;
+  background: #0575E6 ;
+  background: -webkit-linear-gradient(to right, #021B79, #0575E6) !important;
+  background: linear-gradient(to right, #021B79, #0575E6) !important;
+}
+.relative {
+  position: relative;
+}
+.bottom-0 {
+  margin-bottom: 0;
+}
+.artikel-content {
+  background: #f6f9ff;
+}
+.nav-artikel .nav-item .nav-link {
+  transition: all .3s ease-in-out;
+  height: 40px;
+  border-radius: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background: transparent;
+}
+.nav-artikel .nav-item .nav-link:hover {
+  font-weight: 700;
+}
+.nav-artikel .nav-item .nav-link.active {
+  font-weight: 500;
+  color: #ffffff;
+  background: #0575E6 ;
+  background: -webkit-linear-gradient(to right, #021B79, #0575E6) !important;
+  background: linear-gradient(to right, #021B79, #0575E6) !important;
+}
+
 /*font*/
 
 @font-face{
@@ -275,9 +310,9 @@ body{
     -ms-transform: scale(0);
     -o-transform: scale(0);
     transform: scale(0);
-    -webkit-transition-duration: 0.3s;
-    -moz-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s;
+    transition-duration: 0.7s;
 }
 .body-overlay.show-nav {
     -webkit-transform: scale(100);
@@ -346,6 +381,14 @@ body{
   vertical-align: middle;
   padding-right: 8px;
 }
+
+
+/*slider bottom*/
+
+.slider-bottom {
+  background:#007bff;
+}
+
 /*carousel*/
 .carousel-item {
   height: 100vh;
@@ -708,6 +751,9 @@ background: linear-gradient(to right, #26D0CE, #1A2980); /* W3C, IE 10+/ Edge, F
 
 }
 @media only screen and (max-width: 600px) {
+  .keterangan-artikel {
+    min-height: calc( 100vh - 60px);    
+  }
   #perikanan .content .content-item {
     display: none;
   }
